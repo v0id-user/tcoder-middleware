@@ -49,6 +49,6 @@ Bunny.net.http
       });
   })
   .onOriginResponse((ctx: { request: Request; response: Response }) => {
-    ctx.response.headers.append("X-Via", "MyMiddleware");
+    ctx.response.headers.append("X-Via", "TCoderMiddleware");
     return Promise.resolve(ctx.response);
   });
